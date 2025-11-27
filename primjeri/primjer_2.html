@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Primjer – zebra tablica</title>
+    <style>
+        table.zebra {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+
+        table.zebra th,
+        table.zebra td {
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        table.zebra th {
+            background-color: #ddd;
+        }
+
+        /* ZEBRA EFEKT – svaki parni red u tbody */
+        table.zebra tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align:center;">Zebra efekt u tablici</h1>
+
+<table class="zebra">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Ime</th>
+            <th>Omiljeni LEGO set</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>
+            <td>Ana</td>
+            <td>LEGO City</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Marko</td>
+            <td>LEGO Technic</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Ivana</td>
+            <td>LEGO Friends</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Petar</td>
+            <td>LEGO Star Wars</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
