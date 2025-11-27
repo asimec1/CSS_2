@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt – LEGO klub</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+    <header>
+        <div class="banner">
+            <img src="lego_banner.jpg" alt="Lego banner">
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="#">O nama</a></li>
+                <li><a href="#">Radionice</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="lego-contact">
+            <h2>Kontaktirajte nas – LEGO podrška</h2>
+            <p>Ako imate pitanje o svom LEGO setu, ispunite kontakt obrazac u nastavku.</p>
+        
+            <form class="lego-form" action="#" method="post">
+                <div class="form-row">
+                    <label for="first-name">Ime *</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Vaše ime..." required>
+                </div>
+        
+                <div class="form-row">
+                    <label for="last-name">Prezime *</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Vaše prezime..." required>
+                </div>
+        
+                <div class="form-row">
+                    <label for="email">Vaš e-mail *</label>
+                    <input type="email" id="email" name="email" placeholder="Vaš e-mail..." required>
+                </div>
+        
+                <div class="form-row">
+                    <label for="country">Država</label>
+                    <select id="country" name="country">
+                        <option value="hrvatska">Hrvatska</option>
+                        <option value="slovenija">Slovenija</option>
+                        <option value="drugo">Drugo</option>
+                    </select>
+                </div>
+        
+                <div class="form-row">
+                    <label for="subject">Poruka</label>
+                    <textarea id="subject" name="subject" rows="5" placeholder="Napišite svoju poruku..."></textarea>
+                </div>
+        
+                <div class="form-row">
+                    <p><strong>Newsletter</strong></p>
+                    <div class="option">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Želim primati LEGO novosti i popuste</label>
+                    </div>
+                </div>
+        
+                <div class="form-row">
+                    <p><strong>Način dostave</strong></p>
+                    <div class="option">
+                        <input type="radio" id="delivery-standard" name="delivery" value="standardna" checked>
+                        <label for="delivery-standard">Standardna dostava</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="delivery-express" name="delivery" value="ekspresna">
+                        <label for="delivery-express">Ekspresna dostava</label>
+                    </div>
+                </div>
+        
+                <div class="form-row">
+                    <label for="promo-code">Promo kod (onemogućeno polje)</label>
+                    <input type="text" id="promo-code" name="promo-code" value="USKORO" disabled>
+                </div>
+        
+                <div class="form-row">
+                    <button type="submit" class="btn-send">Pošalji</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        © Vaše ime i prezime
+    </footer>
+
+</div>
+
+</body>
+</html>
