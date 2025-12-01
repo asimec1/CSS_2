@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Primjer – padding i margin</title>
+    <style>
+        .box {
+            border: 2px solid #333;
+            background-color: #ffeb99;
+        }
+
+        /* Nema dodatnog razmaka */
+        .bez-razmaka {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Unutarnji razmak */
+        .s-paddingom {
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Vanjski razmak */
+        .s-marginom {
+            padding: 0;
+            margin: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box bez-razmaka">
+        Bez paddinga i margina
+    </div>
+    
+    <div class="box s-paddingom">
+        S paddingom
+    </div>
+    
+    <div class="box s-marginom">
+        S marginom
+    </div>
+    
+</body>
+</html>
+
